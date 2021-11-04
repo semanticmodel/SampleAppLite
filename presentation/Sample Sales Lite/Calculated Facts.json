@@ -48,14 +48,13 @@
         "description": "Shows the sum of revenue for all products."
       }
     ],
-    "permissions": [
+    "permissions": [ {
+        "accessor": "role:BIAdministrator",
+        "access": "READ"
+      },
       {
         "accessor": "role:BIConsumer",
         "access": "WRITE"
-      },
-      {
-        "accessor": "role:BIServiceAdministrator",
-        "access": "READ"
       }
     ]
   }

@@ -80,7 +80,7 @@
             }
           ]
         },
-        "logicalLevel": "Products Type"
+        "logicalLevel": "Products LOB"
       },
       {
         "name": "LOB",
@@ -157,8 +157,7 @@
               }
             }
           ]
-        },
-        "logicalLevel": "Products Brand"
+        }
       },
       {
         "name": "Product Sequence",
@@ -176,8 +175,7 @@
               }
             }
           ]
-        },
-        "logicalLevel": "Products Detail"
+        }
       }
     ],
     "primaryKey": [
@@ -189,17 +187,13 @@
           "tables": [
             "physicalTable:Sample App Lite Data.D10 Product"
           ]
-        },
-        "dataGranularity": [
-          "logicalLevel:SampleApp Lite.H1 Products.Products Detail"
-        ]
+        }
       }
     ],
     "hierarchyType": "LEVEL_BASED",
     "levelBasedHierarchy": {
       "defaultRootLevel": "Total Products",
-      "logicalLevels": [
-        {
+      "logicalLevels": [ {
           "name": "Total Products",
           "grandTotalLevel": true,
           "disableAggregateToHigherLevel": true,
@@ -239,6 +233,7 @@
           "primaryKey": [
             "Product Number"
           ],
+          "displayKey": "Product",
           "preferredDrillPath": [
             "SampleApp Lite.H2 Offices.Offices Detail"
           ]

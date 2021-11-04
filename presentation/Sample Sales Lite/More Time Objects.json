@@ -38,14 +38,13 @@
         "description": "Stores the Julian Quarter Number as an integer."
       }
     ],
-    "permissions": [
+    "permissions": [ {
+        "accessor": "role:BIAdministrator",
+        "access": "READ"
+      },
       {
         "accessor": "role:BIConsumer",
         "access": "WRITE"
-      },
-      {
-        "accessor": "role:BIServiceAdministrator",
-        "access": "READ"
       }
     ]
   }

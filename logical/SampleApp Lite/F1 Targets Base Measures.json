@@ -19,6 +19,9 @@
               }
             }
           ]
+        },
+        "aggregation": {
+          "rule": "SUM"
         }
       },
       {
@@ -37,6 +40,9 @@
               }
             }
           ]
+        },
+        "aggregation": {
+          "rule": "SUM"
         }
       }
     ],

@@ -172,8 +172,7 @@
               }
             }
           ]
-        },
-        "logicalLevel": "Offices Detail"
+        }
       }
     ],
     "primaryKey": [
@@ -185,17 +184,13 @@
           "tables": [
             "physicalTable:Sample App Lite Data.D20 Offices"
           ]
-        },
-        "dataGranularity": [
-          "logicalLevel:SampleApp Lite.H2 Offices.Offices Detail"
-        ]
+        }
       }
     ],
     "hierarchyType": "LEVEL_BASED",
     "levelBasedHierarchy": {
       "defaultRootLevel": "Total Offices",
-      "logicalLevels": [
-        {
+      "logicalLevels": [ {
           "name": "Total Offices",
           "grandTotalLevel": true,
           "disableAggregateToHigherLevel": true,
@@ -207,7 +202,8 @@
           "numberOfElements": 3,
           "primaryKey": [
             "Company Key"
-          ]
+          ],
+          "displayKey": "Company"
         },
         {
           "name": "Offices Organization",
@@ -215,7 +211,8 @@
           "numberOfElements": 6,
           "primaryKey": [
             "Org Key"
-          ]
+          ],
+          "displayKey": "Organization"
         },
         {
           "name": "Offices Department",
@@ -223,14 +220,15 @@
           "numberOfElements": 10,
           "primaryKey": [
             "Dept Key"
-          ]
+          ],
+          "displayKey": "Department"
         },
         {
           "name": "Offices Detail",
           "disableAggregateToHigherLevel": true,
           "numberOfElements": 20,
           "primaryKey": [
-            "Office"
+            "Office Key"
           ],
           "displayKey": "Office",
           "preferredDrillPath": [

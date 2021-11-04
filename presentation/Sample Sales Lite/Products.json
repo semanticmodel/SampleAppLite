@@ -33,20 +33,17 @@
         "alternateNames": [
           "H1 Products"
         ],
-        "sourceLogicalTable": "logicalTable:SampleApp Lite.D1 Products",
         "levels": [ {
             "name": "All Products",
             "alternateNames": [
               "Products Total"
-            ],
-            "sourceLogicalLevel": "logicalLevel:SampleApp Lite.D1 Products.Total Products"
+            ]
           },
           {
             "name": "Brands",
             "alternateNames": [
               "Products Brand"
             ],
-            "sourceLogicalLevel": "logicalLevel:SampleApp Lite.D1 Products.Products Brand",
             "displayColumn": "presentationColumn:Sample Sales Lite.Products.Brand"
           },
           {
@@ -54,7 +51,6 @@
             "alternateNames": [
               "Products LOB"
             ],
-            "sourceLogicalLevel": "logicalLevel:SampleApp Lite.D1 Products.Products LOB",
             "displayColumn": "presentationColumn:Sample Sales Lite.Products.LOB"
           },
           {
@@ -62,7 +58,6 @@
             "alternateNames": [
               "Products Type"
             ],
-            "sourceLogicalLevel": "logicalLevel:SampleApp Lite.D1 Products.Products Type",
             "displayColumn": "presentationColumn:Sample Sales Lite.Products.Product Type"
           },
           {
@@ -70,20 +65,18 @@
             "alternateNames": [
               "Products Detail"
             ],
-            "sourceLogicalLevel": "logicalLevel:SampleApp Lite.D1 Products.Products Detail",
             "displayColumn": "presentationColumn:Sample Sales Lite.Products.Product"
           }
         ]
       }
     ],
-    "permissions": [
+    "permissions": [ {
+        "accessor": "role:BIAdministrator",
+        "access": "READ"
+      },
       {
         "accessor": "role:BIConsumer",
         "access": "WRITE"
-      },
-      {
-        "accessor": "role:BIServiceAdministrator",
-        "access": "READ"
       }
     ]
   }

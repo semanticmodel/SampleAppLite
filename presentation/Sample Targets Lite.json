@@ -7,8 +7,7 @@
     ],
     "implicitFactColumn": "logicalColumn:SampleApp Lite.F0 Revenue Base Measures.Revenue",
     "description": "Sample Subject Area for 11g Lite Sample Application (XML files sourced only).",
-    "tableOrder": [
-      {
+    "tableOrder": [ {
         "name": "presentationTable:Sample Targets Lite.Time"
       },
       {
@@ -27,8 +26,7 @@
         "name": "presentationTable:Sample Targets Lite.Base Facts"
       }
     ],
-    "permissions": [
-      {
+    "permissions": [ {
         "accessor": "role:BIConsumer",
         "access": "WRITE"
       }

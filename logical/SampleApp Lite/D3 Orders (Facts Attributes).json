@@ -80,7 +80,7 @@
       {
         "name": "Order to Bill Days",
         "description": "This is a logical calculation object that computes for ech order, the number of days between order date and bill date.",
-        "dataType": "UNKNOWN",
+        "dataType": "INT",
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
@@ -95,7 +95,7 @@
       {
         "name": "Order to Bill Days Bin",
         "description": "This is a logical calculation object that buckets each order into a group, based on the number of days between order date and bill date. The calculation is done on the fly by BIEE server.",
-        "dataType": "UNKNOWN",
+        "dataType": "VARCHAR",
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
@@ -181,7 +181,7 @@
       {
         "name": "Billed Month",
         "description": "Extracts the month out of the the Oder Bill Date value from the Revenue Facts table. This information is extracted by BIEE server.",
-        "dataType": "UNKNOWN",
+        "dataType": "INT",
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
@@ -195,7 +195,7 @@
       {
         "name": "Billed Year",
         "description": "Extracts the year out of the the Oder Bill Date value from the Revenue Facts table. This information is extracted by BIEE server.",
-        "dataType": "UNKNOWN",
+        "dataType": "INT",
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
@@ -216,18 +216,14 @@
           "tables": [
             "physicalTable:Sample App Lite Data.F10 Revenue Facts (Order grain)"
           ]
-        },
-        "dataGranularity": [
-          "logicalLevel:SampleApp Lite.H3 Orders.Order Details"
-        ]
+        }
       }
     ],
     "hierarchyType": "LEVEL_BASED",
     "levelBasedHierarchy": {
       "defaultRootLevel": "Total Orders",
       "skipped": true,
-      "logicalLevels": [
-        {
+      "logicalLevels": [ {
           "name": "Total Orders",
           "grandTotalLevel": true,
           "disableAggregateToHigherLevel": true,

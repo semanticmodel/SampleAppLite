@@ -28,14 +28,13 @@
         "description": "Extracts the year out of the the Oder Bill Date value from the Revenue Facts table. This information is extracted by BIEE server."
       }
     ],
-    "permissions": [
+    "permissions": [ {
+        "accessor": "role:BIAdministrator",
+        "access": "READ"
+      },
       {
         "accessor": "role:BIConsumer",
         "access": "WRITE"
-      },
-      {
-        "accessor": "role:BIServiceAdministrator",
-        "access": "READ"
       }
     ]
   }

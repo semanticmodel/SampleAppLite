@@ -28,14 +28,13 @@
         "description": "Returns the Target Quantity from the Target Facts table with a Sum aggregation"
       }
     ],
-    "permissions": [
+    "permissions": [ {
+        "accessor": "role:BIAdministrator",
+        "access": "READ"
+      },
       {
         "accessor": "role:BIConsumer",
         "access": "WRITE"
-      },
-      {
-        "accessor": "role:BIServiceAdministrator",
-        "access": "READ"
       }
     ]
   }
